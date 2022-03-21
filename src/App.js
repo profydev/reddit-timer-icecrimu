@@ -4,7 +4,8 @@ import { ThemeProvider } from 'styled-components';
 
 import GlobalStyle from './styles/GlobalStyle';
 import theme from './styles/theme';
-import Header from './Header';
+import { Home, Search } from './pages';
+import Header from './components/Header';
 
 function App() {
   return (
@@ -13,8 +14,8 @@ function App() {
       <Header />
       <Router>
         <Routes>
-          <Route path="/" />
-          <Route path="/search" />
+          <Route path="/" element={<Home />} />
+          <Route path="/search" element={<Search />} />
         </Routes>
       </Router>
     </ThemeProvider>
