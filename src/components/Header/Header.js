@@ -1,18 +1,19 @@
 import React from 'react';
-import logo from '../../assets/logo.svg';
+import * as S from './Header.style';
+import Logo from '../Logo/Logo';
 
 function Header() {
   return (
-    <header>
-      <img src={logo} alt="logo" />
-      <nav>
-        <ul>
-          <li>Search</li>
-          <li>How it works</li>
-          <li>About</li>
-        </ul>
-      </nav>
-    </header>
+    <S.Wrapper>
+      <Logo />
+      <S.Navbar>
+        <S.NavList>
+          <S.List>Search</S.List>
+          <S.List>How it works</S.List>
+          <S.List>About</S.List>
+        </S.NavList>
+      </S.Navbar>
+    </S.Wrapper>
   );
 }
 
