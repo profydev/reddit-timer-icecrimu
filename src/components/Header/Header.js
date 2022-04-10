@@ -13,8 +13,9 @@ function Header() {
 
       <S.Navbar>
         <S.NavList>
-          <S.List>Search</S.List>
-
+          <Link to="/search/javascript">
+            <S.List>Search</S.List>
+          </Link>
           <Link to="/#how-it-works">
             <S.List>How it works</S.List>
           </Link>
