@@ -14,8 +14,14 @@ function Header() {
       <S.Navbar>
         <S.NavList>
           <S.List>Search</S.List>
-          <S.List>How it works</S.List>
-          <S.List>About</S.List>
+
+          <Link to="/#how-it-works">
+            <S.List>How it works</S.List>
+          </Link>
+
+          <Link to="/#about">
+            <S.List>About</S.List>
+          </Link>
         </S.NavList>
       </S.Navbar>
     </S.Wrapper>
