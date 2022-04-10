@@ -1,11 +1,16 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
+
 import * as S from './Header.style';
 import Logo from '../Logo/Logo';
 
 function Header() {
   return (
     <S.Wrapper>
-      <Logo />
+      <Link to="/">
+        <Logo />
+      </Link>
+
       <S.Navbar>
         <S.NavList>
           <S.List>Search</S.List>
