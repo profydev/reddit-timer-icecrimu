@@ -6,10 +6,17 @@ const GlobalStyle = createGlobalStyle`
     ${normalize}
 
     body {
-        font-family: ${({ props }) => props.theme.font.family.default};
-        font-size: ${({ props }) => props.theme.font.size.default};
-        line-height: ${({ props }) => props.theme.font.lineHeight.default};
-        color: ${({ props }) => props.theme.color.text}
+
+        font-family: ${({ theme }) => theme.font.family.default};
+        font-size: ${({ theme }) => theme.font.size.default};
+        line-height: ${({ theme }) => theme.font.lineHeight.default};
+        color: ${({ theme }) => theme.color.text};
+        
+    }
+
+    a {
+        text-decoration: none;
+
     }
 `;
 
