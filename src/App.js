@@ -8,7 +8,6 @@ import theme from './styles/theme';
 import { Home, Search } from './pages';
 import Header from './components/Header/Header';
 
-
 function App() {
   return (
     <ThemeProvider theme={theme}>
