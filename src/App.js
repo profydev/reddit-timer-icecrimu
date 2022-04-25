@@ -4,8 +4,10 @@ import { ThemeProvider } from 'styled-components';
 
 import GlobalStyle from './styles/GlobalStyle';
 import theme from './styles/theme';
+
 import { Home, Search } from './pages';
 import Header from './components/Header/Header';
+
 
 function App() {
   return (

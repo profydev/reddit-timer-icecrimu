@@ -6,6 +6,7 @@ const GlobalStyle = createGlobalStyle`
     ${normalize}
 
     body {
+
         font-family: ${({ theme }) => theme.font.family.default};
         font-size: ${({ theme }) => theme.font.size.default};
         line-height: ${({ theme }) => theme.font.lineHeight.default};
@@ -17,8 +18,6 @@ const GlobalStyle = createGlobalStyle`
         text-decoration: none;
 
     }
-
-
 `;
 
 export default GlobalStyle;
